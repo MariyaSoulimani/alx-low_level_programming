@@ -1,31 +1,31 @@
 #include <stdio.h>
 /**
  * main - prints all possible combinations of two two-digit numbers.
- *
  * Return: 0
-*/
+ */
 int main(void)
 {
-	int i = 0, j = 1;
+int i, j;
+for (i = 0 ; i < 100 ; i++)
+{
+for (j = i ; j < 100 ; j++)
+{
+if (i < j)
+{
+putchar('0' + i / 10);
+putchar('0' + i % 10);
+putchar(' ');
+putchar('0' + j / 10);
+putchar('0' + j % 10);
 
-	while (i < 100)
-	{
-	while (j < 100)
-	{
-		putchar(i / 10 + '0');
-		putchar(i % 10 + '0');
-		putchar(' ');
-		putchar(j / 10 + '0');
-		putchar(j % 10 + '0');
-		if (i != 98 || j != 99)
-	{
-		putchar(',');
-		putchar(' ');
-	}
-		j++;
-	}
-		i++;
-		j = i + 1;
-	}
-		return (0);
+if (i != 98 || j != 99)
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+}
+putchar('\n');
+return (0);
 }
