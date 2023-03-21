@@ -12,7 +12,7 @@ int i;
 
 	for (i = 0; i < 8; ++i)
 	{
-		putchar (arr[i]);
+		_putchar (arr[i]);
 	}
 	return (0);
 }
