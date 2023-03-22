@@ -2,7 +2,7 @@
 
 /**
  * main - entry point
- * description - print the first 50 fibonacci numbers
+ * description - print the first 50 fibonacci numbers.
  * Return: Always 0 (success)
  */
 
