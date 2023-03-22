@@ -1,27 +1,34 @@
 #include <stdio.h>
 
 /**
-  * main - entry point of the program
-  *
-  * Return: always 0
-  */
+ * main - entry point
+ * description - calculate and print the running sum of all multipliers
+ * of 3 and 5 starting from zero to 1024 excluded
+ * Return: Always 0 (success)
+ */
+
 int main(void)
 {
-	unsigned long first = 1;
-	unsigned long second = 2;
-	int i = 0;
+	int sum;
+	int i;
 
-	while (i < 50)
+	i = 0;
+	sum = 0;
+	while (i < 1024)
 	{
-		printf("%lu", first);
-		if (i < 49)
+		if (i % 3 == 0)
 		{
-			second += first;
-			first = second - first;
-			printf(", ");
+			sum += i;
+			i++;
 		}
-		i++;
+		else if (i % 5 == 0)
+		{
+			sum += i;
+			i++;
+		}
+		else
+			i++;
 	}
-	printf("\n");
+	printf("%d\n", sum);
 	return (0);
 }
