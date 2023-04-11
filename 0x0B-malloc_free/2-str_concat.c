@@ -35,4 +35,5 @@ char *str_concat(char *s1, char *s2)
 	cont_str[cont_i] = '\0';
 
 	return (cont_str);
+}
 
