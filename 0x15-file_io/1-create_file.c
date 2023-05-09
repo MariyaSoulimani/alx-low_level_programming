@@ -7,7 +7,7 @@
  *			containing the text to be written to the file.
  *
  * Return: If the function succeeds, it returns 1.
- * 		If an error occurs, it returns -1.
+ *		If an error occurs, it returns -1.
  */
 int create_file(const char *filename, char *text_content)
 {
